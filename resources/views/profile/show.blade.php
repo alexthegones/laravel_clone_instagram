@@ -14,6 +14,10 @@
                     <div class="mr-3"><strong>210</strong> abonnés</div>
                     <div class="mr-3"><strong>180</strong> abonnements</div>
                 </div>
+                @can('update', $user->profile)
+                    <a href="{{ route('profile.edit', ['username' => $user->username]) }}"
+                       class="btn btn-outline-secondary">Modifier mes informations</a>
+                @endcan
                 <div>
                     <div class="font-weight-bold">{{ $user->profile->title }}</div>
                     <div class="font-weight-bold">{{ $user->profile->description }}</div>
@@ -23,14 +27,15 @@
             </div>
         </div>
         <div class="row">
-{{--            @if (session('status'))--}}
-{{--                <div class="alert alert-success">--}}
-{{--                    {{ session('status') }}--}}
-{{--                </div>--}}
-{{--            @endif--}}
+            {{--            @if (session('status'))--}}
+            {{--                <div class="alert alert-success">--}}
+            {{--                    {{ session('status') }}--}}
+            {{--                </div>--}}
+            {{--            @endif--}}
             @foreach($user->posts as $post)
                 <div class="col-4 p-2">
-                    <a href="{{ route('post.show', ['post' => $post->id]) }}"><img src="{{ asset('storage') . '/' . $post->image }}" class="w-100" alt=""></a>
+                    <a href="{{ route('post.show', ['post' => $post->id]) }}"><img
+                            src="{{ asset('storage') . '/' . $post->image }}" class="w-100" alt=""></a>
                 </div>
             @endforeach
         </div>

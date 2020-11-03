@@ -29,7 +29,7 @@
                                            name="image" id="image">
                                     <label class="custom-file-label" for="validatedCustomFile">Choisir un
                                         fichier</label>
-                                    @error('caption')
+                                    @error('image')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

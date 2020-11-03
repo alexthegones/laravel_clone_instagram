@@ -11,12 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f84882b-0b80-49e2-b9cc-3881503c39f0" name="Default Changelist" comment="Style profile page">
-      <change afterPath="$PROJECT_DIR$/resources/views/post/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/clone_instagram.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/clone_instagram.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/profile/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/post/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/post/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -162,7 +159,7 @@
       <workItem from="1604308369495" duration="4608000" />
       <workItem from="1604321424371" duration="9043000" />
       <workItem from="1604391484454" duration="2316000" />
-      <workItem from="1604393839756" duration="3079000" />
+      <workItem from="1604393839756" duration="6600000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1604308499074</created>
@@ -185,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604330423799</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Resizing image post">
+      <created>1604396996191</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604396996191</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +211,8 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Style profile page" />
     <MESSAGE value="Creation profile / Upload file(Post)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation profile / Upload file(Post)" />
+    <MESSAGE value="Resizing image post" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resizing image post" />
   </component>
   <component name="WindowStateProjectService">
     <state x="660" y="291" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604329696395">
@@ -234,13 +239,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="351" y="78" key="SettingsEditor/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604394013792" />
-    <state x="452" y="182" key="Vcs.Push.Dialog.v2" timestamp="1604330441692">
+    <state x="452" y="182" key="Vcs.Push.Dialog.v2" timestamp="1604397002732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="182" key="Vcs.Push.Dialog.v2/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604330441692" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1604330254268">
+    <state x="452" y="182" key="Vcs.Push.Dialog.v2/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604397002732" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1604400934142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604330254268" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604400934142" />
   </component>
 </project>
