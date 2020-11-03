@@ -17,12 +17,21 @@
                 <div>
                     <div class="font-weight-bold">{{ $user->profile->title }}</div>
                     <div class="font-weight-bold">{{ $user->profile->description }}</div>
-                    <div><img src="{{ asset('svg/github.svg') }}" width="25px" class="mr-2" alt=""><a href="#">{{ $user->profile->url }}</a> </div>
+                    <div><img src="{{ asset('svg/github.svg') }}" width="25px" class="mr-2" alt=""><a
+                            href="#">{{ $user->profile->url }}</a></div>
                 </div>
             </div>
         </div>
-    <div class="row">
-        <div class="col-4">
+        <div class="row">
+{{--            @if (session('status'))--}}
+{{--                <div class="alert alert-success">--}}
+{{--                    {{ session('status') }}--}}
+{{--                </div>--}}
+{{--            @endif--}}
+            @foreach($user->posts as $post)
+                <div class="col-4 p-2">
+                    <a href="{{ route('post.show', ['post' => $post->id]) }}"><img src="{{ asset('storage') . '/' . $post->image }}" class="w-100" alt=""></a>
+                </div>
+            @endforeach
         </div>
-    </div>
 @endsection

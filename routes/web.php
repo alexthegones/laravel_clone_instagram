@@ -20,10 +20,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-//Home
+// * Home
 Route::get('/home', 'HomeController@index')->name('home');
-//Profile
+// * Profile
 Route::get('/profile/{user}', 'ProfileController@show')->name('profile.show');
-//Post
+// * Post
 Route::get('/post/create', 'PostController@create')->name('post.create');
 Route::post('/post/store', 'PostController@store')->name('post.store');
+Route::get('/posts/{post}', 'PostController@show')->name('post.show');

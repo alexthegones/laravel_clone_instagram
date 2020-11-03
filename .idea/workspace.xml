@@ -11,13 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f84882b-0b80-49e2-b9cc-3881503c39f0" name="Default Changelist" comment="Style profile page">
-      <change afterPath="$PROJECT_DIR$/resources/views/post/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/post/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/clone_instagram.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/clone_instagram.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -121,6 +120,10 @@
       <path value="$PROJECT_DIR$/vendor/laravel/framework" />
       <path value="$PROJECT_DIR$/vendor/symfony/mime" />
       <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jjBnhV7oX6BweDBeLwbNXmNCaE" />
@@ -138,7 +141,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="settings.CommentHighlighterCustomTokensSettingsPage" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -157,7 +160,9 @@
       <updated>1604307788964</updated>
       <workItem from="1604307790088" duration="563000" />
       <workItem from="1604308369495" duration="4608000" />
-      <workItem from="1604321424371" duration="8674000" />
+      <workItem from="1604321424371" duration="9043000" />
+      <workItem from="1604391484454" duration="2316000" />
+      <workItem from="1604393839756" duration="3079000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1604308499074</created>
@@ -173,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604315154567</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Creation profile / Upload file(Post)">
+      <created>1604330423799</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604330423799</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +206,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Style profile page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Style profile page" />
+    <MESSAGE value="Creation profile / Upload file(Post)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation profile / Upload file(Post)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="660" y="291" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604329696395">
@@ -217,17 +230,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1865" height="259" key="GridCell.Tab.0.right/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604308356155" />
-    <state x="351" y="78" key="SettingsEditor" timestamp="1604327470739">
+    <state x="351" y="78" key="SettingsEditor" timestamp="1604394013792">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="351" y="78" key="SettingsEditor/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604327470739" />
-    <state x="452" y="182" key="Vcs.Push.Dialog.v2" timestamp="1604315158546">
+    <state x="351" y="78" key="SettingsEditor/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604394013792" />
+    <state x="452" y="182" key="Vcs.Push.Dialog.v2" timestamp="1604330441692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="182" key="Vcs.Push.Dialog.v2/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604315158546" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1604324762854">
+    <state x="452" y="182" key="Vcs.Push.Dialog.v2/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604330441692" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1604330254268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604324762854" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604330254268" />
   </component>
 </project>
