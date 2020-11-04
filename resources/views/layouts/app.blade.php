@@ -59,7 +59,7 @@
                                 <strong>{{ Auth::user()->name }}</strong> <span class="caret"></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">My profile</a>
+                                <a class="dropdown-item" href="{{ route('profile.show', ['username' =>  Auth::user()->username ]) }}">My profile</a>
                                 <a class="dropdown-item" href="{{ route('post.create') }}">Créer un post</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();

@@ -27,11 +27,10 @@
                             </div>
                             <div class="form-group">
                                 <label for="description" class="">Description</label>
-                                <input id="description" type="text"
-                                       class="form-control @error('description') is-invalid @enderror"
-                                       name="description"
-                                       value="{{ old('description') ?? $user->profile->description }}"
-                                       autocomplete="description" autofocus>
+                                <textarea id="description" type="text"
+                                          class="form-control @error('description') is-invalid @enderror"
+                                          name="description"
+                                          autocomplete="description" autofocus>{{ old('description') ?? $user->profile->description  }}</textarea>
 
                                 @error('description')
                                 <span class="invalid-feedback" role="alert">
@@ -52,6 +51,7 @@
                                     </span>
                                 @enderror
                             </div>
+
                             <div class="form-group">
                                 <div class="custom-file mb-3">
                                     <input type="file" class="custom-file-input @error('image') is-invalid @enderror"
