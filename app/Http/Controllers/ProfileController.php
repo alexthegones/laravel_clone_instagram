@@ -10,8 +10,11 @@ class ProfileController extends Controller
 {
     public function show(User $user)
     {
+        // * Si l'user est connecté alors est-ce que cet user contient est deja abonné à ce profil ou non
+        $follow = (auth()->user()) ? auth()->user()->following->contains($user->profile->id)
+            : false;
 
-        return view('profile.show', compact('user'));
+        return view('profile.show', compact('user', 'follow'));
     }
 
     public function edit(User $user)
@@ -31,12 +34,13 @@ class ProfileController extends Controller
             'url' => 'required|url',
             'image' => 'sometimes|image|max:2048'
         ]);
+        // * Condition pour le champ - Si une image est stockée
         if ($request['image']) {
             $path = $request->file('image')->store('avatars/' . $request->user()->username, 'public');
             // * Redimensionnement de l'image à l'issue d'un upload
             $image = Image::make(public_path("/storage/{$path}"))->fit(250, 250);
             $image->save();
-
+            // * Alors on récupère toujours les data mais en modifiant le chemin de l'image de la clé 'image'
             auth()->user()->profile->update(array_merge(
                 $data,
                 ['image' => $path]

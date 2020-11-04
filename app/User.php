@@ -60,4 +60,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Post');
     }
+
+    public function following() // * Abonnements
+    {
+        return $this->belongsToMany('App\Profile');
+    }
 }
