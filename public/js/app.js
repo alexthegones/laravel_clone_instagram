@@ -1916,7 +1916,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['profileId', 'follow'],
-  // * Propriétés immutable
+  // * Propriétés immutables
   data: function data() {
     return {
       status: this.follow
@@ -1940,7 +1940,7 @@ __webpack_require__.r(__webpack_exports__);
     // * Valeur calculée (v-text)
     following: function following() {
       // * Si follow c-a-d le statue, est true ou non
-      return this.status ? 'Suivre' : 'Ne plus suivre';
+      return this.status ? 'Ne plus suivre' : 'Suivre';
     }
   }
 });

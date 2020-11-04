@@ -7,7 +7,7 @@
 <script>
     export default {
 
-        props: ['profileId', 'follow'],// * Propriétés immutable
+        props: ['profileId', 'follow'],// * Propriétés immutables
 
         data: function () {
             return {
@@ -31,7 +31,7 @@
         computed: { // * Valeur calculée (v-text)
             following(){
                 // * Si follow c-a-d le statue, est true ou non
-                return(this.status) ? 'Suivre' : 'Ne plus suivre';
+                return(this.status) ? 'Ne plus suivre' : 'Suivre';
             }
         }
     }
