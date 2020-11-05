@@ -12,7 +12,7 @@ class FollowController extends Controller
         $this->middleware('auth');
     }
 
-    public function store(Profile $profile)
+    public function store($profile)
     {
         return auth()->user()->following()->toggle($profile); // * Si le profil est lié à l'utilisateur ou non avec toggle(Abonnement ou non)
     }

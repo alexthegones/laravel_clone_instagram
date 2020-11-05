@@ -2,6 +2,7 @@
 
 @section('content')
     <div class="container">
+        <h1 class="display-4 text-center mb-5"><u>Dernier posts</u></h1>
         @foreach($posts as $post)
             <div class="row mb-3">
                 <div class=" col-6 offset-3">

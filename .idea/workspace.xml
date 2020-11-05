@@ -12,11 +12,13 @@
   <component name="ChangeListManager">
     <list default="true" id="5f84882b-0b80-49e2-b9cc-3881503c39f0" name="Default Changelist" comment="Style profile page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FollowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FollowController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/FollowButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/FollowButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/post/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/post/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,6 +167,8 @@
       <workItem from="1604495180189" duration="16798000" />
       <workItem from="1604572280533" duration="3631000" />
       <workItem from="1604581184925" duration="2869000" />
+      <workItem from="1604584089060" duration="1586000" />
+      <workItem from="1604585719821" duration="3481000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1604308499074</created>
@@ -222,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604512360833</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Mailing">
+      <created>1604584343428</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604584343428</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +260,8 @@
     <MESSAGE value="Profile Image Edit" />
     <MESSAGE value="Following operation" />
     <MESSAGE value="Posts index" />
-    <option name="LAST_COMMIT_MESSAGE" value="Posts index" />
+    <MESSAGE value="Mailing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mailing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="660" y="291" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604329696395">
@@ -280,13 +292,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="351" y="78" key="SettingsEditor/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604394013792" />
-    <state x="452" y="182" key="Vcs.Push.Dialog.v2" timestamp="1604512381503">
+    <state x="452" y="182" key="Vcs.Push.Dialog.v2" timestamp="1604584345584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="182" key="Vcs.Push.Dialog.v2/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604512381503" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1604583887882">
+    <state x="452" y="182" key="Vcs.Push.Dialog.v2/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604584345584" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1604586661216">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604583887882" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.-3.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604586661216" />
   </component>
 </project>

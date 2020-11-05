@@ -10,8 +10,9 @@
             <div class="col-8">
                 <div class="d-flex">
                     <div class="h4 mr-3">{{ $user->username }}</div>
-                    {{--                    @if(auth()->user() === auth()->user()->profile->id)--}}
-                    <follow-button profile-id="{{ $user->profile->id }}" follows="{{ $follow }}"></follow-button>
+                    @if(!$protect)
+                        <follow-button profile-id="{{ $user->profile->id }}" follow="{{ $follow }}"></follow-button>
+                    @endif
                 </div>
                 <div class="mt-2">
                     @can('update', $user->profile)
@@ -37,11 +38,19 @@
             {{--                    {{ session('status') }}--}}
             {{--                </div>--}}
             {{--            @endif--}}
-            @foreach($user->posts as $post)
-                <div class="col-4 p-2">
-                    <a href="{{ route('post.show', ['post' => $post->id]) }}"><img
-                            src="{{ asset('storage') . '/' . $post->image }}" class="w-100" alt=""></a>
+            @if($user->posts->count())
+                @foreach($user->posts as $post)
+                    <div class="col-4 p-2">
+                        <a href="{{ route('post.show', ['post' => $post->id]) }}"><img
+                                src="{{ asset('storage') . '/' . $post->image }}" class="w-100" alt=""></a>
+                    </div>
+                @endforeach
+            @else
+                <div class="col-6">
+                    <div class="alert alert-warning" role="alert">
+                        Pas de posts encore disponible sur ce profile..
+                    </div>
                 </div>
-            @endforeach
+            @endif
         </div>
 @endsection

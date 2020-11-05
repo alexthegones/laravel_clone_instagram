@@ -11,16 +11,16 @@ class ProfileController extends Controller
 {
     public function show(User $user)
     {
-        // * Si l'user est connecté alors est-ce que cet user contient est deja abonné à ce profil ou non
+        // * Si l'user est connecté alors est-ce que cet user est deja abonné à ce profil ou non
         $follow = (auth()->user()) ? auth()->user()->following->contains($user->profile->id) : false;
 
         $postsCount = $user->posts->count();
-
         $followersCount = $user->profile->followers->count();
-
         $followingCount = $user->following->count();
 
-        return view('profile.show', compact('user', 'follow', 'postsCount', 'followersCount', 'followingCount'));
+        $protect = \Illuminate\Support\Facades\Request::is('profile/' . auth()->user()->username);
+
+        return view('profile.show', compact('user', 'follow', 'postsCount', 'followersCount', 'followingCount', 'protect'));
     }
 
     public function edit(User $user)
