@@ -10,6 +10,7 @@
             <div class="col-8">
                 <div class="d-flex">
                     <div class="h4 mr-3">{{ $user->username }}</div>
+                    {{--                    @if(auth()->user() === auth()->user()->profile->id)--}}
                     <follow-button profile-id="{{ $user->profile->id }}" follows="{{ $follow }}"></follow-button>
                 </div>
                 <div class="mt-2">
@@ -19,9 +20,9 @@
                     @endcan
                 </div>
                 <div class="d-flex mt-3">
-                    <div class="mr-3"><strong>{{ $user->posts->count() }}</strong> publications</div>
-                    <div class="mr-3"><strong>{{ $user->profile->followers->count() }}</strong> abonnés</div>
-                    <div class="mr-3"><strong>{{ $user->following->count() }}</strong> abonnements</div>
+                    <div class="mr-3"><strong>{{ $postsCount }}</strong> publications</div>
+                    <div class="mr-3"><strong>{{ $followersCount }}</strong> abonnés</div>
+                    <div class="mr-3"><strong>{{ $followingCount }}</strong> abonnements</div>
                 </div>
                 <div class="mt-2">
                     <div class="font-weight-bold">{{ $user->profile->title }}</div>

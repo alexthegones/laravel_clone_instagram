@@ -2,9 +2,10 @@
 
 namespace App;
 
+use App\Mail\WelcomeUserMail;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Mail;
 
 class User extends Authenticatable
 {
@@ -37,15 +38,20 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public static function boot()
+    public static function boot() // * Méthode concernant le traitement à la création(created)
     {
         parent::boot();
-        static::created(function ($user){
-            $user->profile()->create([
+
+        static::created(function ($user) {
+            // * Création du profil à la création d'un user
+            $data = $user->profile()->create([
                 'title' => 'Profil de ' . $user->username
             ]);
+            // * Mail de bienvenue lors de la création d'un nouveau profil/user
+            Mail::to($data->user->email)->send(new WelcomeUserMail());
         });
     }
+
     public function getRouteKeyName()
     {
         return 'username';

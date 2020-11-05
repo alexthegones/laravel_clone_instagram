@@ -9,17 +9,12 @@
 
         props: ['profileId', 'follow'],// * Propriétés immutables
 
-        data: function () {
-            return {
-                status: this.follow
-            }
-        },
         methods: {
             followProfile()
             {
                 axios.post('/follow/' + this.profileId)// * Requête HTTP via Axios
                 .then(response => {
-                   this.status =! this.status;
+                      this.follow =! this.follow;
                 })
                 .catch(errors => {
                     if(errors.response.status === 401){
@@ -31,7 +26,7 @@
         computed: { // * Valeur calculée (v-text)
             following(){
                 // * Si follow c-a-d le statue, est true ou non
-                return(this.status) ? 'Ne plus suivre' : 'Suivre';
+                return(this.follow) ? 'Ne plus suivre' : 'Suivre';
             }
         }
     }

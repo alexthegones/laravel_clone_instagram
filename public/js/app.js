@@ -1917,18 +1917,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['profileId', 'follow'],
   // * Propriétés immutables
-  data: function data() {
-    return {
-      status: this.follow
-    };
-  },
   methods: {
     followProfile: function followProfile() {
       var _this = this;
 
       axios.post('/follow/' + this.profileId) // * Requête HTTP via Axios
       .then(function (response) {
-        _this.status = !_this.status;
+        _this.follow = !_this.follow;
       })["catch"](function (errors) {
         if (errors.response.status === 401) {
           window.location = '/login';
@@ -1940,7 +1935,7 @@ __webpack_require__.r(__webpack_exports__);
     // * Valeur calculée (v-text)
     following: function following() {
       // * Si follow c-a-d le statue, est true ou non
-      return this.status ? 'Ne plus suivre' : 'Suivre';
+      return this.follow ? 'Ne plus suivre' : 'Suivre';
     }
   }
 });
